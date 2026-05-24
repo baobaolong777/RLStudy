@@ -24,6 +24,8 @@ model = SAC(
     gamma=0.95,
     policy_kwargs=dict(net_arch=[256, 256, 256]),
     gradient_steps=-1,
+    # HER 需要等第一个 episode 结束后才能采样
+    learning_starts=1000,
 )
 
 model.learn(

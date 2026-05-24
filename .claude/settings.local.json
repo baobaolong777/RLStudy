@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python train_panda_v3.py)",
+      "Bash(python -c \"import stable_baselines3; print\\('SB3 found:', stable_baselines3.__version__\\)\")",
+      "Bash(conda env *)",
+      "Bash(/home/baodonghao/miniconda3/envs/rl_robot/bin/python *)",
+      "Skill(update-config)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(git branch *)"
+    ]
+  }
+}

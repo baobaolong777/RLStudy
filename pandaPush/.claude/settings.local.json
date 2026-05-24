@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:shurufa.sogou.com)",
+      "Bash(dpkg-deb -f /tmp/sogoupinyin.deb Depends)",
+      "Bash(curl -sI \"https://pinyin.sogou.com/linux/download.php?f=linux&bit=64\" -L)",
+      "Bash(apt-cache search *)",
+      "Bash(apt-cache policy *)",
+      "Bash(sudo -S apt remove -y fcitx5-chinese-addons fcitx5-chinese-addons-bin fcitx5-chinese-addons-data fcitx5-pinyin fcitx5-table fcitx5-module-cloudpinyin fcitx5-module-chttrans fcitx5-module-fullwidth fcitx5-module-pinyinhelper fcitx5-module-punctuation)",
+      "Bash(sudo -S apt install -y fcitx fcitx-config-gtk fcitx-frontend-gtk2 fcitx-frontend-gtk3 fcitx-frontend-qt5 fcitx-module-kimpanel fcitx-module-x11 fcitx-ui-classic fcitx-libs)",
+      "Bash(sudo -S dpkg -i /tmp/sogoupinyin.deb)",
+      "Bash(sudo -S apt --fix-broken install -y)",
+      "Bash(sudo -S apt remove -y fcitx fcitx-config-gtk fcitx-frontend-gtk2 fcitx-frontend-gtk3 fcitx-frontend-qt5 fcitx-module-kimpanel fcitx-module-x11 fcitx-ui-classic fcitx-libs fcitx-data)",
+      "Bash(sudo -S apt install -y fcitx5 fcitx5-chinese-addons fcitx5-pinyin fcitx5-table fcitx5-module-cloudpinyin fcitx5-module-chttrans fcitx5-module-fullwidth fcitx5-module-pinyinhelper fcitx5-module-punctuation fcitx5-config-qt fcitx5-frontend-gtk3 fcitx5-frontend-gtk4 fcitx5-frontend-qt5 fcitx5-frontend-qt6 fcitx5-modules)",
+      "Bash(sudo -S apt install -y fcitx5 fcitx5-chinese-addons fcitx5-pinyin fcitx5-table fcitx5-module-cloudpinyin fcitx5-config-qt fcitx5-frontend-gtk3 fcitx5-frontend-gtk4 fcitx5-frontend-qt5 fcitx5-modules)",
+      "Bash(sudo -S im-config -n fcitx5)",
+      "Bash(pkill fcitx5 *)",
+      "Bash(sleep 1)",
+      "Bash(export GTK_IM_MODULE=fcitx5 QT_IM_MODULE=fcitx5 XMODIFIERS=@im=fcitx5)",
+      "Bash(fcitx5 -d)",
+      "Bash(fcitx5-remote -t)"
+    ]
+  }
+}

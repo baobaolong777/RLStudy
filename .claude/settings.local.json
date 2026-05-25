@@ -10,7 +10,25 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git config *)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "Bash(gh auth *)",
+      "Read(//home/baodonghao/**)",
+      "Bash(ssh-keygen -t ed25519 -f ~/.ssh/github_rlstudy -N \"\" -C \"3296783220@qq.com\")",
+      "Bash(ssh -T git@github.com)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(ssh-keyscan github.com)",
+      "Bash(claude goal *)",
+      "Bash(ps *)",
+      "WebSearch",
+      "Bash(claude mcp *)",
+      "Bash(conda run *)",
+      "Bash(sudo apt *)",
+      "Bash(sudo -S apt install flatpak -y)",
+      "Bash(flatpak remote-add *)",
+      "Bash(flatpak install *)",
+      "Bash(flatpak list *)",
+      "Bash(/home/baodonghao/miniconda3/envs/rl_robot/bin/pip install *)"
     ]
   }
 }
